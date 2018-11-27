@@ -5,7 +5,8 @@
   "author": "Houston Searcy",
   "license": "MIT",
   "scripts": {
-    "babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react"
+    "babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
+    "start": "live-server public --port=5353"
   },
   "dependencies": {
     "babel-preset-env": "1.5.2",

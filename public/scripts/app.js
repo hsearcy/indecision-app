@@ -8,7 +8,7 @@ var template = React.createElement(
     React.createElement(
         "h1",
         null,
-        "Indecision App"
+        "Houston"
     ),
     React.createElement(
         "p",
@@ -30,6 +30,26 @@ var template = React.createElement(
         )
     )
 );
+
+var templateTwo = React.createElement(
+    "div",
+    null,
+    React.createElement(
+        "h1",
+        null,
+        "Houston Searcy"
+    ),
+    React.createElement(
+        "p",
+        null,
+        "Age: 29"
+    ),
+    React.createElement(
+        "p",
+        null,
+        "Location: Georgia"
+    )
+);
 var appRoot = document.getElementById("app");
 
-ReactDOM.render(template, appRoot);
+ReactDOM.render(templateTwo, appRoot);
