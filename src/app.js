@@ -1,5 +1,7 @@
 console.log("App.js is running!");
 
+const appRoot = document.getElementById("app");
+
 const app = {
     title: "Indecision App",
     subtitle: "DON'T put your life in the hands of a computer",
@@ -21,7 +23,11 @@ function onRemoveAll() {
     render();
 }
 
-const appRoot = document.getElementById("app");
+function listOptions() {
+    return app.options.map((option) => {
+        return <li key={option}>{option}</li>
+    })
+}
 
 function render() {
     const template = (
@@ -32,8 +38,7 @@ function render() {
             <p>{app.options.length}</p>
             <button onClick={onRemoveAll}>Remove All</button>
             <ol>
-                <li>Item one</li>
-                <li>Item 2</li>
+                {listOptions()}
             </ol>
             <form onSubmit={onFormSubmit}>
                 <input type="text" name="option"/>
