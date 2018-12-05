@@ -1,19 +1,16 @@
 let visible = false;
 
 function onVisibilityToggle() {
-  visible = visible ? false : true;
+  visible = !visible;
   render();
 }
 
 function toggledContent() {
-  if (visible) {
     return (
       <div>
-        Here is a thing that will disappear!
+        <p>Here is a thing that will disappear!</p>
       </div>
     );
-  }
-  return null;
 }
 
 function render() {
@@ -21,7 +18,7 @@ function render() {
     <div>
       <h1>Visibility Toggle</h1>
       <button onClick={onVisibilityToggle}>{visible ? "Hide Details" : "Show Details"}</button>
-      {toggledContent()}
+      {visible && toggledContent()}
     </div>
   );
   ReactDOM.render(template, document.getElementById("app"));
