@@ -27,11 +27,7 @@ class Counter extends React.Component {
     }
 
     handleReset() {
-        this.setState(() => {
-            return {
-                count: 0
-            };
-        });
+        this.setState({ count: 0 }); //dont do this, it can lead to async issues
     }
 
     render() {
