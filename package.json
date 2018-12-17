@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
-    "babel-playground": "babel src/playground/build-it-visible-state.js --out-file=public/scripts/app.js --presets=env,react --watch",
+    "babel-playground": "babel src/playground/counter-state-example.js --out-file=public/scripts/app.js --presets=env,react --watch",
     "start": "live-server public --port=5353"
   },
   "dependencies": {
