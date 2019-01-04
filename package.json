@@ -5,10 +5,10 @@
   "author": "Houston Searcy",
   "license": "MIT",
   "scripts": {
+    "start": "webpack-dev-server",
     "babel-playground": "babel src/playground/counter-state-example.js --out-file=public/scripts/app.js --presets=env,react --watch",
-    "start": "live-server public --port=5353",
-    "build": "webpack",
-    "dev-server": "webpack-dev-server"
+    "start-live-server": "live-server public --port=5353",
+    "build": "webpack"
   },
   "dependencies": {
     "react": "^16.7.0",
@@ -19,6 +19,7 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "1.5.2",
     "babel-preset-react": "6.24.1",
     "live-server": "^1.2.1",
