@@ -7,10 +7,17 @@
   "scripts": {
     "babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
     "babel-playground": "babel src/playground/counter-state-example.js --out-file=public/scripts/app.js --presets=env,react --watch",
-    "start": "live-server public --port=5353"
+    "start": "live-server public --port=5353",
+    "build": "webpack --watch"
   },
   "dependencies": {
     "babel-preset-env": "1.5.2",
     "babel-preset-react": "6.24.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "live-server": "^1.2.1",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0"
   }
 }
