@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Do Something Else') {
       steps {
-        dir(path: './src')
+        dir(path: '../../src')
         pwd()
       }
     }
