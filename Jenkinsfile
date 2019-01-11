@@ -6,5 +6,11 @@ pipeline {
         echo 'Yay!'
       }
     }
+    stage('Do Something Else') {
+      steps {
+        sh '''pwd
+ls'''
+      }
+    }
   }
 }
