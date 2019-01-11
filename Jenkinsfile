@@ -6,5 +6,10 @@ pipeline {
         echo 'Yay!'
       }
     }
+    stage('Do Something Else') {
+      steps {
+        pwd(tmp: true)
+      }
+    }
   }
 }
