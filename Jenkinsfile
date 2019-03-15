@@ -10,7 +10,10 @@ pipeline {
       }
       steps {
         echo 'Yay!'
-        sh 'yarn add @gather/constants'
+        nodejs('Node 8') {
+          sh 'yarn add @gather/constants'
+        }
+
       }
     }
     stage('Do Something Else') {
